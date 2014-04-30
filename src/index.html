@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basil.js</title>
+<script type="text/javascript" src="js/basil.js"></script>
+</head>
+<body>
+<h1>Basil.js</h1>
+<p id="k">this is a paragraph</p>
+<div class="gow">This is a div</div>
+<p id="r">this is  a paragraph</p>
+<script>
+window.onload = function(){
+    
+//fetching id '#k'
+m= basil("#k").get();
+console.log(m);
+    
+//inner HTML example
+m = basil("#r").get();
+m.innerHTML = "gowtham";
+console.log(m);
+    
+//fetching a class
+m= basil(".gow").get();
+console.log(m);
+    
+//fetching elements
+m = basil("p").get();
+console.log(m);
+    
+}
+</script>
+</body>
+</html>
