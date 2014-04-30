@@ -1,6 +1,6 @@
 /*
  *
- * Basil.js
+ * @package Basil.js
  * @developer R Gowtham Vasishta
 */   
     //defining a constructor
@@ -37,7 +37,7 @@
                     t = selector[i].split(".");
                     this.output[i] = this.classes(t[1]); 
                 }
-                //else consider as tag (yes! we need more filtering system!)
+                //else consider as tag (yes! we need more filtering over here!)
                 else {
                     this.output[i] = this.get_tag(selector);
                 }
